@@ -1,7 +1,4 @@
-# local defaults (applying only to tasks defined in this file) can be defined in a task named "__defaults__"
 - name: __defaults__
-  folds: 5
-  cores: 12
   max_mem_size_mb: 24576
 
 - name: gender
