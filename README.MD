@@ -1,4 +1,7 @@
-from run import run
+usage:
+
+```
+from automlbenchmark import run
 
 constraints = ["30m", "1h"]
 frameworks = ["AutoGluon", "flaml", "H2OAutoML"]
@@ -11,4 +14,4 @@ for c in constraints:
         for f in frameworks:
             run([f, "sap", c, "-t", task, "-m", "docker", "-f", fold_num])
 
-
+```
