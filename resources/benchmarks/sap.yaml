@@ -1,0 +1,22 @@
+# local defaults (applying only to tasks defined in this file) can be defined in a task named "__defaults__"
+- name: __defaults__
+  folds: 5
+  cores: 12
+  max_mem_size_mb: 24576
+
+- name: gender
+  dataset:
+    train:
+      - /abs/pfad/data/sap/gender_train_0.csv
+      - /abs/pfad/data/sap/gender_train_1.csv
+      - /abs/pfad/data/sap/gender_train_2.csv
+      - /abs/pfad/data/sap/gender_train_3.csv
+      - /abs/pfad/data/sap/gender_train_4.csv
+    test:
+      - /abs/pfad/data/sap/gender_test_0.csv
+      - /abs/pfad/data/sap/gender_test_1.csv
+      - /abs/pfad/data/sap/gender_test_2.csv
+      - /abs/pfad/data/sap/gender_test_3.csv
+      - /abs/pfad/data/sap/gender_test_4.csv
+    target: gender
+  type: classification
