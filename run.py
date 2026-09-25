@@ -95,9 +95,10 @@ def run(arguments: Optional[Iterable[str]] = None):
     )
 
     log.info(
-        "Running benchmark `%s` on `%s` framework in `%s` mode.",
-        args.framework,
+        "Running task `%s:%s` on `%s` framework in `%s` mode.",
         args.benchmark,
+        args.task[0],
+        args.framework,
         args.mode,
     )
     if args.openml_test_server:
